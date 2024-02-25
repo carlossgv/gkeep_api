@@ -1,0 +1,13 @@
+[package]
+name = "gkeep_api"
+version = "0.0.1-alpha"
+edition = "2021"
+description = "A Rust library for interacting with Google Keep"
+license = "MIT"
+repository = "https://github.com/carlossgv/gkeep_api"
+
+[dependencies]
+reqwest = { version = "0.11.24", features = ["json", "cookies"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
